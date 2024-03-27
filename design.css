@@ -8,13 +8,91 @@
     align-items: center;
     width:100%;
     height:100vh;
-    background-color:rgb(154, 114, 114);
+    background-color:rgb(177, 156, 156);
 }
 
 /* footer css start */
+/* footer css - :  */
 
-footer {
-    width: 100%;
-    height: 60vh;
-    background-color: green;
+.footer {
+   
+    width: 100vw;
+    height: 70vh;
+     
+    
+   } 
+   #content {
+     margin-top:10vh ;
+     
+   }
+   
+   
+   .head {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-weight: 500;
+     padding-left: 50px;
+     width: 100%;
+     height: 20%;
+     background-color:#f8f8f8;
+     font-size: large;
+     color: rgb(0, 0, 0);
+   }
+   
+   .F-container {
+     display: flex;
+     flex-wrap: nowrap;
+     justify-content: space-evenly;
+     width: 100%;
+     height:65%;
+     background-color: #fffefe;
+     color: rgb(0, 0, 0);
+   }
+   .container div {
+     display: flex;
+     flex-direction: column;
+      width: 250px;
+      height: 320px;
+     
+      
+   } 
+   .container div h3 {
+   margin: 0;
+   }
+   .container div p {
+     display: flex;
+     margin-top: 1px;
+   }
+   
+    .social-link  a i {
+        color: rgb(0, 0, 0);
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+    .social-link {
+     display: flex;
+     
+    } 
+    .policy {
+    
+     width: 100%;
+     height: 15%;
+     background-color: #f8f8f8;
+     color: rgb(0, 0, 0);
+     padding: 10px;
+    }
+    .policy p {
+     margin: 0;
+     font-size: 15px;
+    }
+    .line {
+     width: 50vw;
+     height: 0.5px;
+     background-color: black;
+    }
+/* footer css end  */
+
+label {
+    display: block;
 }
