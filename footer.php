@@ -1,8 +1,8 @@
 <?php
   echo'
-  <div className="footer">
-  <section className="head"> Foodies" Adda ! Restaurant </section>
-   <section className="F-container">
+  <div class="footer">
+  <section class="head"> Foodies" Adda ! Restaurant </section>
+   <section class="F-container">
        <div>
           <h3>About Foodies" Adda</h3>
         
@@ -37,18 +37,18 @@
     
        <div>
            <h3>Social link</h3>
-           <span className="social-link">
-               <a href="/"><i className="fa-brands fa-facebook"></i></a>
-               <a href="/"><i className="fa-brands fa-instagram"></i></a>
-               <a href="/"><i className="fa-brands fa-whatsapp"></i></a>
-               <a href="/"><i className="fa-brands fa-youtube"></i></a>
+           <span class="social-link">
+               <a href="/"><i class="fa-brands fa-facebook"></i></a>
+               <a href="/"><i class="fa-brands fa-instagram"></i></a>
+               <a href="/"><i class="fa-brands fa-whatsapp"></i></a>
+               <a href="/"><i class="fa-brands fa-youtube"></i></a>
            </span>
        </div>
 
   </section>
 
-  <div className="line"></div>
-  <div className="policy">
+  <div class="line"></div>
+  <div class="policy">
    <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2023-2024 © Foodies" Adda™ Ltd. All rights reserved.</p>
    </div> 
 

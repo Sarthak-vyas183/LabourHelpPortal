@@ -2,21 +2,13 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-#main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height:100vh;
-    background-color:rgb(177, 156, 156);
-}
+
 
 /* footer css start */
-/* footer css - :  */
+    /* footer css - :  */
 
 .footer {
-   
-    width: 100vw;
+    width: 100%;
     height: 70vh;
      
     
@@ -46,7 +38,7 @@
      justify-content: space-evenly;
      width: 100%;
      height:65%;
-     background-color: #fffefe;
+     background-color: #f8f8f8;
      color: rgb(0, 0, 0);
    }
    .container div {
@@ -93,6 +85,53 @@
     }
 /* footer css end  */
 
-label {
-    display: block;
+  /* register css start */
+
+  #main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    background-color:rgb(216, 206, 206);
 }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 40%;
+    height: 100%;
+    border: 2px solid rgb(0, 0, 0);
+  }
+  .res-form {
+
+    width: 100%;
+    height: 85%;
+ } 
+
+  label {
+    display: block;
+  } 
+  .input-box , .res-btn {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  input {
+    width: 400px;
+    border-radius: 5px;
+    border: 2px solid black;
+  }
+  .res-btn {
+    margin-top: 10px;
+    background-color: rgb(93, 93, 225);
+    color: white;
+    height: 40px;
+    margin-left: 50px;
+  }
+.pro-Detail {
+    display: none;
+}
+
+  /* register css end */
