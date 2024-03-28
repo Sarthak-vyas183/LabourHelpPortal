@@ -15,7 +15,7 @@
     <section class="content">
         <h1 class="title">Register</h1>
 
-        <form class="res-form" action="/" method="get">
+        <form class="res-form" action="backend/signupConn.php" method="post">
 
             <div class="input-box name">
                 <label for="name">Name*</label>
@@ -56,7 +56,7 @@
 
                 <label class="mt-2" for="skillname" id="skillname">Select Skill Name:</label>
                 <select class="mb-2 w-50" name="skillname" id="skillname" class="skillname">
-                    <option value="">---Select---</option>
+                    <option value="null">---Select---</option>
                     <option value="construction">Knowledge of Building and Construction</option>
                     <option value="painter">Painter</option>
                     <option value="welding">Welding</option>

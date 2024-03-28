@@ -34,10 +34,13 @@
       
       
       <button class="btn btn-outline-success mx-2" type="submit"><a class="text-decoration-none" style="color:black;" href="Register.php">Register</a></button>
-      <button class="btn btn-outline-success mx-2" type="submit"><a class="text-decoration-none" style="color:black;" href="loginModal.php">Log-in</a></button>
+      <button  class=" text-black btn btn-outline-success me-2 loginbtn" type="button" id="drop-btn" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@getbootstrap">
+        log-in
+    </button>
 
     </div>
   </div>
 </nav>
   ';
+  require('loginModal.php');
 ?>
