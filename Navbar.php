@@ -1,6 +1,31 @@
 <?php
 
-  echo '
+if (session_status() == PHP_SESSION_NONE) {
+  session_start();
+}
+
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+  echo "
+  <style>
+      .logoutbtn , .profilebtn {
+          display: flex;
+      }
+      .loginbtn, .register {
+          display: none;
+      }
+  </style>
+  ";
+} else {
+  echo "
+  <style>
+      .profilebtn, .logoutbtn {
+          display: none;
+      }
+  </style>
+  ";
+}
+
+ echo '
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -26,18 +51,22 @@
           <a class="nav-link" href="contact.php">Contact</a>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="welcome.php">Welcome</a>
-        </li>
-
+      
       </ul>
       
       
-      <button class="btn btn-outline-success mx-2" type="submit"><a class="text-decoration-none" style="color:black;" href="Register.php">Register</a></button>
+      <button class="btn btn-outline-success mx-2 register" type="submit"><a class="text-decoration-none" style="color:black;" href="Register.php">Register</a></button>
       <button  class=" text-black btn btn-outline-success me-2 loginbtn" type="button" id="drop-btn" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-whatever="@getbootstrap">
         log-in
-    </button>
+      </button>
 
+      <button  class="text-black btn btn-outline-success me-2 logoutbtn" type="button">
+         <a class="text-decoration-none text-black" href="logout.php">Logout</a>
+      </button>
+     <button  class=" text-black btn btn-outline-success me-2 profilebtn" type="button">
+         <a class="text-decoration-none text-black" href="welcome.php">Profile</a>
+      </button>
+      
     </div>
   </div>
 </nav>

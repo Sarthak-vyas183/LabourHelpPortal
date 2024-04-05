@@ -1,3 +1,24 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+    echo "<script>alert(' Please Login First !');</script>";
+          header("Refresh: 0; URL= index.php");
+    exit;
+} else {
+    echo "
+    <style>
+        .profilebtn  {
+            display:none;
+        }
+    </style>
+    ";
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,5 +39,5 @@
    require("footer.php");
    ?>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></>
 </html>
