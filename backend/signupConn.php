@@ -9,6 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userType = $_POST['userType'];
     $skilled = $_POST['skilled'];
     $skillname = $_POST['skillname'];
+    $description = $_POST['description']; 
 
     // Check if the email already exists
     $checkEmailQuery = "SELECT * FROM signup WHERE email = ?";
@@ -33,9 +34,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         // Neither email nor contact exists, proceed with registration
         $hash = password_hash($pass, PASSWORD_DEFAULT);
-        $send = "INSERT INTO signup VALUES (?, ?, ?, ?, ?, ?, ?)";
+        $send = "INSERT INTO signup VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($send);
-        $stmt->bind_param("sssssss", $sname, $email, $hash, $contact, $userType, $skilled, $skillname);
+        $stmt->bind_param("ssssssss", $sname, $email, $hash, $contact, $userType, $skilled, $skillname ,$description);
 
         if ($stmt->execute()) {
             echo "<script>alert('Registered successfully'); window.location.href='../index.php';</script>";
