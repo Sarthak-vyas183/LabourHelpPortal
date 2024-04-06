@@ -1,5 +1,14 @@
 <?php
 
+$email = $_POST['email']; // Capture email from form
+
+$_SESSION['loggedin'] = true;
+$_SESSION['email'] = $email; // Store email in session
+
+
+
+
+
 $login = false;
 $showerror = false;
 

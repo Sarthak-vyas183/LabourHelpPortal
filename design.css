@@ -134,9 +134,8 @@
     display: none;
 }
 
-  /* register css end */
-
-  /* header css str*/
- 
-  /* header css end */
-
+.profile-main {
+  height:100vh;
+  width: 100vw;
+  background-color: skyblue;
+}
