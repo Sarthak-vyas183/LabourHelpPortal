@@ -1,0 +1,17 @@
+
+.sr-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height:auto;
+    background-color: skyblue;
+    padding: 30px;
+    
+}
+.card {
+  
+   margin: 20px;
+}
+
+

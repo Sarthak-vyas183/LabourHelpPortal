@@ -47,7 +47,6 @@
       width: 250px;
       height: 320px;
      
-      
    } 
    .container div h3 {
    margin: 0;
@@ -87,14 +86,7 @@
 
   /* register css start */
 
-  #main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width:100%;
-    height:100vh;
-    background-color:rgb(216, 206, 206);
-}
+  
   .content {
     display: flex;
     flex-direction: column;
@@ -139,3 +131,13 @@
   width: 100vw;
   background-color: skyblue;
 }
+
+/* service section css start */
+
+#main {
+  width:100%;
+  height:90vh;
+  background-color: orange;
+}
+
+/* service section css end */
