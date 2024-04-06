@@ -6,9 +6,6 @@ $_SESSION['loggedin'] = true;
 $_SESSION['email'] = $email; // Store email in session
 
 
-
-
-
 $login = false;
 $showerror = false;
 

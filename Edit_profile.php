@@ -66,6 +66,11 @@ if ($result->num_rows > 0) {
             <label for="skillNm" class="form-label">Skill Name:</label>
             <input type="text" class="form-control" id="skillNm" name="skillNm" value="<?php echo $SkillName; ?>">
          </div>
+
+        <div class="mb-3">
+            <label for="Desc" class="form-label">Description:</label>
+            <input type="text" class="form-control" id="Desc" name="description" value="<?php echo $SkillName; ?>">
+         </div>
          <button type="submit" class="btn btn-primary">Save Changes</button>
       </form>
    </div>
