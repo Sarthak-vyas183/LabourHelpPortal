@@ -64,8 +64,9 @@
                     <option value="barber">Barber</option>
                     <option value="plumber">Plumber</option>
                     <option value="ac_repair">AC & Home Appliance Repair</option>
-                    <option value="cook">Chef</option> 
+                    <option value="chef">Chef</option> 
                     <option value="farmLabour">Farming Labour</option>
+                    <option value="gnlabor">General Labour</option>
                     <option value="other">Other</option>
                 </select>
             </div>
