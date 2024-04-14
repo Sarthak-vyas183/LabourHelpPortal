@@ -14,16 +14,22 @@ $contact = $_POST['contact'];
 $userType = $_POST['userType'];
 $SkillName = $_POST['skillNm'];
 $description = $_POST['description'];
+$city = $_POST['city'];
 
-$sql = "UPDATE signup SET sname = ?, contact = ?, usrTyp = ?, skillNm = ?, description = ? WHERE email = ?";
+$sql = "UPDATE signup SET sname = ?, contact = ?, usrTyp = ?, skillNm = ?, description = ?, city = ? WHERE email = ?";
 $stmt = $conn->prepare($sql);
-$stmt->bind_param("ssssss", $name, $contact, $userType, $SkillName, $description, $userEmail);
 
-if ($stmt->execute()) {
-    echo "<script>alert('Your Profile Update successfully');</script>";
-    header("Refresh: 0; URL= ../index.php");
-    exit;
+if ($stmt) {
+    $stmt->bind_param("sssssss", $name, $contact, $userType, $SkillName, $description, $city, $userEmail);
+
+    if ($stmt->execute()) {
+        echo "<script>alert('Your Profile Update successfully');</script>";
+        header("Refresh: 0; URL=../welcome.php");
+        exit;
+    } else {
+        echo "Error updating profile.";
+    }
 } else {
-    echo "Error updating profile.";
+    echo "Error preparing statement: " . $conn->error;
 }
 ?>

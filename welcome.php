@@ -33,6 +33,7 @@ if (isset($_SESSION['email'])) {
         $userType = $row['usrTyp'];
         $SkillName = $row['skillNm'];
         $description = $row['description'];
+        $city = $row['city'];
         // Fetch other information as needed
     } else {
         echo "User not found!";
@@ -61,6 +62,7 @@ if (isset($_SESSION['email'])) {
     <h3 class="text-white">Contact Detail :<?php echo $contact; ?>  </h3>
     <h3 class="text-white">What you are : <?php echo $userType; ?></h3>
     <h3 class="text-white">Skill Name : <?php echo $SkillName; ?></h3>
+    <h3 class="text-white">City : <?php echo $city; ?></h3>
     <h3 class="text-white">About Your self : <?php echo $description; ?></h3>
     <button><a class="text-decoration-none text-black bg-primary" href="Edit_profile.php">Edit Profile</a></button>
 

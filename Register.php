@@ -37,6 +37,11 @@
                 <input type="text" id="contact" name="contact" required>
             </div>
 
+            <div class="input-box contact">
+                <label for="contact">City*</label>
+                <input type="text" id="city" name="city" required>
+            </div>
+
             <div class="input-box Type">
                 <label for="userType">User Type*</label>
                 <select id="userType" name="userType" required>

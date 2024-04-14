@@ -32,6 +32,9 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' ) {
         header("Refresh: 0; URL=../index.php");
        }
      }
+  } else {
+    echo "<script>alert('Login failed. Please check your credentials.');</script>";
+    header("Refresh: 0; URL=../index.php");
   }
 }
 ?>
