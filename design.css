@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 * {
-    font-family: 'Times New Roman', Times, serif;
+  font-family: "Philosopher", sans-serif;
+
 }
 
 
@@ -133,14 +136,80 @@
 }
 
 /* service section css start */
-
+ body {
+  overflow-x: hidden;
+ }
 #main {
-  width:100%;
-  height:90vh;
-  background-color: orange;
+  width: 100vw;
+  height: 90vh;
+  background-image: url("./partials/labour01.png");
+ 
+}
+.home-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+}
+.title-info{
+  width: 80%;
+  height: 50%;
+  background-color: transparent;
+}
+.title-info p {
+  font-size: 40px;
+  font-weight: 700;
+}
+.title-info button {
+  width: 9rem;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  background-color: yellow;
 }
 
 /* service section css end */
+
+/* contact form css start */
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+  }
+  .contact-box {
+    width: 33%;
+    height: 75%;
+    background-color: transparent;
+    padding: 20px;
+  }
+  .contact-box input{
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border: 2px solid white;
+    outline: none;
+    color: white;
+    
+  }
+  .contact-box button {
+    width: 8rem;
+    height: 2.5rem;
+    outline: none;
+    background-color: rgb(108, 108, 200);
+    color: black;
+    border-radius: 7px;
+    outline: none;
+  }
+  .contact-box label {
+    color: black;
+   font-size: 30px;
+  }
+/* contact form css end */
 
 
 

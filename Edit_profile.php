@@ -23,6 +23,7 @@ if ($result->num_rows > 0) {
     $userType = $row['usrTyp'];
     $SkillName = $row['skillNm'];
     $city = $row['city'];
+    $img = $row['pimg'];
     // Fetch other information as needed
 } else {
     echo "User not found!";
@@ -90,6 +91,11 @@ if ($result->num_rows > 0) {
         <div class="mb-3">
             <label for="city" class="form-label">City:</label>
             <input type="text" class="form-control" id="city" name="city" value="<?php echo $city; ?>">
+         </div>
+
+        <div class="mb-3">
+            <label for="img" class="form-label">Profile</label>
+            <input type="file" class="form-control" id="img" name="pimg">
          </div>
          <button type="submit" class="btn btn-primary">Save Changes</button>
       </form>

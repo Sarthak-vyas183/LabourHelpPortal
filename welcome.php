@@ -34,6 +34,7 @@ if (isset($_SESSION['email'])) {
         $SkillName = $row['skillNm'];
         $description = $row['description'];
         $city = $row['city'];
+        $img = $row['pimg'];
         // Fetch other information as needed
     } else {
         echo "User not found!";
@@ -50,23 +51,28 @@ if (isset($_SESSION['email'])) {
     <title>About</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./design.css">
+    <link rel="stylesheet" href="cssfiles/welcome.css">
 </head>
 <body>
    <?php
    require("Navbar.php");
    ?>
-<div class="profile-main w-100 h-100 bg-dark justify-content-center">
-    <h1 class="text-white">welcome : <?php echo $name; ?> </h1>
-    <h3 class="text-white">Name: <?php echo $name; ?> </h3>
-    <h3 class="text-white">your email : <?php echo $email; ?> </h3>
-    <h3 class="text-white">Contact Detail :<?php echo $contact; ?>  </h3>
-    <h3 class="text-white">What you are : <?php echo $userType; ?></h3>
-    <h3 class="text-white">Skill Name : <?php echo $SkillName; ?></h3>
-    <h3 class="text-white">City : <?php echo $city; ?></h3>
-    <h3 class="text-white">About Your self : <?php echo $description; ?></h3>
+<div class="welcome-profile-main w-100 h-100  justify-content-center">
+    <h1 class="text-dark">welcome : <?php echo $name; ?> </h1>
+    <h3 class="text-dark">Name: <?php echo $name; ?> </h3>
+    <h3 class="text-dark">your email : <?php echo $email; ?> </h3>
+    <h3 class="text-dark">Contact Detail :<?php echo $contact; ?>  </h3>
+    <h3 class="text-dark">What you are : <?php echo $userType; ?></h3>
+    <h3 class="text-dark">City : <?php echo $city; ?></h3>
+    <h3 class="text-dark">About Your self : <?php echo $description; ?></h3>
     <button><a class="text-decoration-none text-black bg-primary" href="Edit_profile.php">Edit Profile</a></button>
-
 </div> 
+     
+
+
+
+
+
    <?php
    require("footer.php");
    ?> 

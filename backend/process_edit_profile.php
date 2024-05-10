@@ -15,12 +15,13 @@ $userType = $_POST['userType'];
 $SkillName = $_POST['skillNm'];
 $description = $_POST['description'];
 $city = $_POST['city'];
+$img = $_POST['pimg'];
 
-$sql = "UPDATE signup SET sname = ?, contact = ?, usrTyp = ?, skillNm = ?, description = ?, city = ? WHERE email = ?";
+$sql = "UPDATE signup SET sname = ?, contact = ?, usrTyp = ?, skillNm = ?, description = ?, city = ? , pimg = ?  WHERE email = ?";
 $stmt = $conn->prepare($sql);
 
 if ($stmt) {
-    $stmt->bind_param("sssssss", $name, $contact, $userType, $SkillName, $description, $city, $userEmail);
+    $stmt->bind_param("ssssssss", $name, $contact, $userType, $SkillName, $description, $city, $img ,  $userEmail);
 
     if ($stmt->execute()) {
         echo "<script>alert('Your Profile Update successfully');</script>";

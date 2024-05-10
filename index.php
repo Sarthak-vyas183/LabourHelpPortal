@@ -12,8 +12,16 @@
  <?php
   require("Navbar.php");
  ?>
- <div id="main">
-   <h1>shreemati radha rani ki jay </h1>
+ <div id="main" class="home-main">
+    <div class="home-left">
+       <b class="title-info">
+         <p>Doorstep <span class="text-white">service Instantly</span> </p>
+         <span>Find skilled labour swiftly on kamconnect <br> your express lane to reliable assistance, just a click away!</span><br>
+         <button class="mt-4"><a class="text-decoration-none text-black" href="./services.php">Find Labour</a></button><br>
+         <span class="mt-4"><a class=" text-white" href="/register.php">Register </a>If you are a labour</span>
+       </b>
+    </div>
+ 
  </div>
  <?php
   require("footer.php");

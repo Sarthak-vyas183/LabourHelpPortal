@@ -1,10 +1,10 @@
 <?php
   echo'
   <div class="footer">
-  <section class="head"> Foodies" Adda ! Restaurant </section>
+  <section class="head">KamConnect.in</section>
    <section class="F-container">
        <div>
-          <h3>About Foodies" Adda</h3>
+          <h3>Labour Help Portal</h3>
         
            <p>who we are</p>
            <p>Blog</p>
@@ -15,7 +15,7 @@
           
            </div>
        <div>
-        <h3>Our Franchise</h3>
+        <h3>Our Branches</h3>
         
            <p>Bhopal - head </p>
            <p>Indore</p>
@@ -49,7 +49,7 @@
 
   <div class="line"></div>
   <div class="policy">
-   <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2023-2024 © Foodies" Adda™ Ltd. All rights reserved.</p>
+   <p>By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2023-2024 © KamConnect.in™ Ltd. All rights reserved.</p>
    </div> 
 
 </div>
